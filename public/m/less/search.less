@@ -1,0 +1,45 @@
+@import './base.less';
+
+#main {
+   
+    .navbar {
+        padding:5px 10px;
+        >span {
+            color: #666;
+            font-size: 12px;
+            &:nth-of-type(1){
+            float: left;
+            }
+            &:nth-of-type(2){
+                float: right;
+               &::before {
+                   margin-right: 3px;
+               }
+            }
+        }
+    }
+    .history {
+        padding: 10px;
+        >ul {
+            border: 1px solid #ccc ;
+        
+            &::before,&::after{
+                height: 0;
+            }
+            
+            >li {
+                line-height: 10px;
+                padding: 5px;
+                >a {
+                    font-size: 12px;
+                    width: 100%;
+                    color: #666;
+                    margin: 0;
+                    >i{
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

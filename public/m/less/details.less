@@ -1,0 +1,90 @@
+@import './base.less';
+
+
+#main{
+   .mui-scroll-wrapper{
+       height: 100%;
+       position: relative;
+       .product-detail {
+        font-size: 14px;
+     .product-name {
+      font-size: 18px;
+      padding: 10px 5px;
+      border-bottom: 1px solid #ccc;
+     }
+     .product-price {
+         border-bottom: 1px solid #ccc;
+         padding: 10px 5px;
+         >strong {
+             color: #f40;
+             font-size: 20px;
+         }
+         >del{
+             font-size: 12px;
+             color: #ccc;
+             margin-left: 12px;
+         }
+     }
+     .product-size {
+         border-bottom: 1px solid #ccc;
+         padding: 10px 5px;
+         line-height: 40px;
+         >.btn-size{
+             width: 28px;
+             height: 28px;
+             display: inline-block;
+             border: 1px solid #ccc;
+             line-height: 28px;
+             text-align: center;
+             &.mui-active {
+                 background-color: orange;
+             }
+         }
+     }
+     .product-num {
+         border-bottom: 1px solid #ccc;
+         padding: 10px 5px;
+         >span{
+             width: 28px;
+             height: 28px;
+             display: inline-block;
+             border: 1px solid #ccc;
+             line-height: 28px;
+             text-align: center;
+         }
+         >input{
+             border: 0;
+             // outline: none;
+             padding: 0;
+             width: 28px;
+             height: 28px;
+             border: 1px solid #ccc;
+             margin: 0;
+             transform: translateY(-1px);
+             text-align: center;
+             line-height: 28px;
+             font-size: 14px;
+         }
+     }
+    }
+   }
+  
+}
+
+#footer{
+    background-color: #ccc;
+    padding: 10px;
+   
+    .fa-shopping-cart{
+        float: left;
+        font-size: 20px;
+        line-height: 40px;
+        margin-left: 20px;
+    }
+    >.mui-btn{
+        float: right;
+        &+a{
+            margin-right: 10px;
+        }
+    }
+}

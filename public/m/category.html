@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/category.less">
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="hearder">
+        <a href="#" class="fa-arrow-left"></a>
+        <form action="#">
+            <input type="search" placeholder="请输入你要搜索的内容">
+        </form>
+        <a href="./search.html" class="fa fa-search"></a>
+    </header>
+    <main id="main">
+        <div class="category-left ">
+            <div class="mui-scroll-wrapper mui-content">
+                <div class="mui-scroll">
+                <ul class="">
+                    <!-- <li class="active">
+                        <a href="#">运动馆</a>
+                    </li>
+                    <li>
+                        <a href="#">运动馆</a>
+                    </li>
+                    <li>
+                        <a href="#">运动馆</a>
+                    </li>
+                    <li>
+                        <a href="#">运动馆</a>
+                    </li>
+                    <li>
+                        <a href="#">运动馆</a>
+                    </li> -->
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="category-right mui-scroll-wrapper">
+            <!-- <div class=""> -->
+            <div class="mui-scroll">
+                <div class="mui-row ">
+                    <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand2.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand3.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand4.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand5.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3 active">
+                <a href="./index.html" class="fa fa-home">
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./category.html" class="fa fa-bars">
+                    <span>分类</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./cart.html" class="fa fa-shopping-cart">
+                    <span>购物车</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./user.html" class="fa fa-user">
+                    <span>个人中心</span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <script id="categoryLeftTem" type="text/html">
+        {{each rows as value}}
+        <li data-id='{{value.id}}'>
+            <a href="#">{{value.categoryName}}</a>
+        </li>
+        {{/each}}
+    </script>
+    <script id="categoryRightTem" type="text/html">
+        <div class="mui-row ">
+            {{each rows as value }}
+            <div class="mui-col-xs-4">
+                <a href="#">
+                    <img src="{{value.brandLogo}}" alt="">
+                    <p>{{value.brandName}}</p>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/category.js"></script>
+</body>
+
+</html>

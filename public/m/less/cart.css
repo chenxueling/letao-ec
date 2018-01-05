@@ -1,0 +1,272 @@
+img {
+  vertical-align: middle;
+}
+input {
+  outline: none;
+}
+li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-style: normal;
+}
+a {
+  color: #000;
+}
+#hearder {
+  height: 45px;
+  background-color: #006699;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+#hearder > h4 {
+  margin: 0;
+  line-height: 45px;
+  font-weight: normal;
+}
+#hearder > .fa-search {
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+#hearder > .fa-arrow-left {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  color: #fff;
+}
+#hearder > form {
+  padding: 8px 35px;
+}
+#hearder > form > input {
+  background-color: #fff;
+  text-align: left;
+  color: #000;
+  height: 30px;
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#hearder .fa-home {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  color: #fff;
+}
+#hearder .fa-refresh {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  color: #fff;
+}
+#footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+#footer > .mui-row > div > a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+#footer > .mui-row > div > a::before {
+  display: block;
+  padding: 2px;
+}
+#footer > .mui-row > div.active > a {
+  color: darkorange;
+}
+html,
+body {
+  height: 100%;
+}
+#main {
+  height: 100%;
+  overflow: hidden;
+  padding: 45px 0 50px 0;
+  background-color: #fff;
+}
+#main form {
+  padding: 10px;
+  position: relative;
+  padding-right: 70px;
+}
+#main form > input {
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #006699;
+  border-radius: 5px 0 0 5px;
+  margin: 0;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 12px;
+}
+#main form > .btn-search {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #006699;
+  color: #fff;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #006699;
+  border-radius: 0;
+}
+[class^=fa-],
+[class*=fa-] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.product {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
+.product .product-img {
+  display: block;
+}
+.product .product-img > img {
+  width: 100%;
+}
+.product .product-name {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ccc;
+  height: 28px;
+  overflow: hidden;
+}
+.product .product-price {
+  font-size: 12px;
+  line-height: 24px;
+}
+.product .product-price > span {
+  color: #f40;
+}
+.product .product-price > del {
+  color: #ccc;
+}
+#main .mui-scroll-wrapper {
+  position: relative;
+  height: 100%;
+  padding-bottom: 20px;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell {
+  position: relative;
+  padding: 10px;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-right {
+  font-size: 16px;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell {
+  width: 100%;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell > a > img {
+  width: 60px;
+  height: 60px;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell > a .mui-media-body > P {
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  color: #666;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell > a .mui-media-body > .info .price .nowprice {
+  color: #ff3300;
+  font-size: 14px;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell > a .mui-media-body > .info .price .oldprice {
+  color: #ccc;
+  font-size: 12px;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell > a .mui-media-body > .info .num {
+  float: right;
+  font-size: 12px;
+  margin-right: 20px;
+  transform: translateY(-20px);
+  color: #ccc;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell > a .mui-media-body > .info .size {
+  font-size: 12px;
+}
+#main .mui-scroll-wrapper .mui-scroll ul .mui-table-view-cell .mui-slider-handle .mui-table-cell > a > input {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
+.totalPrice {
+  position: fixed;
+  bottom: 50px;
+  background-color: #fff;
+  line-height: 30px;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #ff3300;
+  font-weight: 700;
+  width: 100%;
+  z-index: 998;
+}
+.totalPrice > button {
+  float: right;
+  background-color: #ff3300;
+  width: 100px;
+  height: 30px;
+}
+.product-size {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+  line-height: 40px;
+  text-align: left;
+}
+.product-size > .btn-size {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  line-height: 28px;
+  text-align: center;
+}
+.product-size > .btn-size.mui-active {
+  background-color: orange;
+}
+.product-num {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+  text-align: left;
+}
+.product-num > span {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  line-height: 28px;
+  text-align: center;
+}
+.product-num > input {
+  border: 0;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  margin: 0;
+  transform: translateY(-1px);
+  text-align: center;
+  line-height: 28px;
+  font-size: 14px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘</title>
+    <!-- 添加首页的站点图标 -->
+    <link rel="shortcut icon" type="./images/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/user.less">
+    <!-- //引入less的编译器文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="hearder">
+        <a href="javascript:history.back()" class="fa-arrow-left"></a>
+        <h4>个人中心</h4>
+    </header>
+    <main id="main">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="./images/user.jpg">
+                    <div class="mui-media-body ">
+                        <span class="username"></span>
+                        <p class='mui-ellipsis'>绑定手机:<span class="mobile"></span> </p>
+                        <i class="mui-navigate-right"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <div class="mui-media-body">
+                        账号与安全
+                        <i class="mui-navigate-right"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <div class="mui-media-body">
+                        我的购物车
+                        <i class="mui-navigate-right"></i>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <div class="mui-media-body">
+                        收货地址管理
+                        <i class="mui-navigate-right"></i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+       <div class="user-out">
+        <button class="btn-loginout">退出登录</button>
+       </div>
+    </main>
+
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3 active">
+                <a href="./index.html" class="fa fa-home">
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./category.html" class="fa fa-bars">
+                    <span>分类</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./cart.html" class="fa fa-shopping-cart">
+                    <span>购物车</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./user.html" class="fa fa-user">
+                    <span>个人中心</span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./js/user.js"></script>
+</body>
+
+</html>

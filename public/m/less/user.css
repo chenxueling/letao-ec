@@ -1,0 +1,169 @@
+img {
+  vertical-align: middle;
+}
+input {
+  outline: none;
+}
+li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  font-style: normal;
+}
+a {
+  color: #000;
+}
+#hearder {
+  height: 45px;
+  background-color: #006699;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+#hearder > h4 {
+  margin: 0;
+  line-height: 45px;
+  font-weight: normal;
+}
+#hearder > .fa-search {
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+#hearder > .fa-arrow-left {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  color: #fff;
+}
+#hearder > form {
+  padding: 8px 35px;
+}
+#hearder > form > input {
+  background-color: #fff;
+  text-align: left;
+  color: #000;
+  height: 30px;
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#hearder .fa-home {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  color: #fff;
+}
+#footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+#footer > .mui-row > div > a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+#footer > .mui-row > div > a::before {
+  display: block;
+  padding: 2px;
+}
+#footer > .mui-row > div.active > a {
+  color: darkorange;
+}
+html,
+body {
+  height: 100%;
+}
+#main {
+  height: 100%;
+  overflow: hidden;
+  padding: 45px 0 50px 0;
+  background-color: #fff;
+}
+#main form {
+  padding: 10px;
+  position: relative;
+  padding-right: 70px;
+}
+#main form > input {
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #006699;
+  border-radius: 5px 0 0 5px;
+  margin: 0;
+  text-align: left;
+  padding-left: 5px;
+  font-size: 12px;
+}
+#main form > .btn-search {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #006699;
+  color: #fff;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #006699;
+  border-radius: 0;
+}
+[class^=fa-],
+[class*=fa-] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.product {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 5px #ccc;
+}
+.product .product-img {
+  display: block;
+}
+.product .product-img > img {
+  width: 100%;
+}
+.product .product-name {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ccc;
+  height: 28px;
+  overflow: hidden;
+}
+.product .product-price {
+  font-size: 12px;
+  line-height: 24px;
+}
+.product .product-price > span {
+  color: #f40;
+}
+.product .product-price > del {
+  color: #ccc;
+}
+#main > ul > li {
+  font-size: 16px;
+}
+#main .user-out {
+  width: 100%;
+  padding: 0 10px;
+}
+#main .user-out > .btn-loginout {
+  margin-top: 20px;
+  width: 100%;
+}

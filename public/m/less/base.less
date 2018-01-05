@@ -1,0 +1,180 @@
+// 一些公共的样式
+@main-color:#006699;
+
+@cart-color:#ff3300;
+
+img {
+    vertical-align: middle;
+}
+
+input {
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+i {
+    font-style: normal;
+}
+
+a {
+    color: #000;
+}
+// hearder部分
+#hearder {
+    height: 45px;
+    background-color: @main-color;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    >h4 {
+    margin: 0;
+    line-height: 45px;
+    font-weight: normal;
+    }
+    >.fa-search {
+    color: #fff;
+    position: absolute;   
+    right: 10px;
+    top: 14px;
+    }
+    >.fa-arrow-left {
+        position: absolute;
+        left: 10px;
+        top: 14px;
+        color: #fff;
+    }
+    >form {
+        padding: 8px 35px;
+        >input {
+            background-color: #fff;
+            text-align: left;
+            color: #000;
+            height: 30px;
+            margin-bottom: 0;
+            padding: 0;
+            padding-left: 5px;
+            font-size: 14px;
+        }
+    }
+    .fa-home{
+        position: absolute;
+        top: 14px;
+        right: 10px;
+        color: #fff;
+    }
+    .fa-refresh {
+       position: absolute;
+       top: 14px;
+       right: 10px;
+       color: #fff;
+    }
+}
+
+// footer部分
+#footer {
+    height: 50px;
+    background-color: @main-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    text-align: center;   
+    z-index: 999;
+    >.mui-row {
+        >div {
+            >a{
+            display: block;
+            padding: 10px;
+            color: #fff;
+            font-size: 14px;
+            &::before{
+                display: block;
+                padding: 2px;
+            }
+            }
+            &.active{
+               >a{
+                color: darkorange;
+               }
+            }
+        }
+    }
+}
+html,body {
+  height: 100%;
+}
+#main {
+     height: 100%;  
+     overflow: hidden;
+     padding:45px 0 50px 0;
+     background-color: #fff;
+     form {
+        padding: 10px;
+        position: relative;
+        padding-right: 70px;
+        >input{
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid @main-color;
+        border-radius: 5px 0 0 5px;
+        margin: 0;
+        text-align: left;
+        padding-left: 5px;
+        font-size: 12px;
+        }
+        >.btn-search {
+       position: absolute;
+       right: 10px;
+       top: 10px;
+       background-color: @main-color;
+       color: #fff;
+       width: 60px;
+       height: 30px;
+       border: 1px solid @main-color;
+       border-radius:0;
+        }
+    }
+}
+
+[class^=fa-],[class*=fa-] {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.product {
+    margin-top: 5px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 5px #ccc;
+    .product-img {
+        display: block;
+        >img {
+            width: 100%;
+        }
+    }
+    .product-name {
+        font-size: 14px;
+        line-height: 14px;
+        color: #ccc;
+        height: 28px;
+        overflow: hidden;
+    }
+    .product-price {
+        font-size: 12px;
+        line-height: 24px;
+        >span {
+            color: #f40;
+        }>del {
+            color: #ccc;
+        }
+    }
+}

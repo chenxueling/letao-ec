@@ -1,0 +1,134 @@
+img {
+  vertical-align: middle;
+}
+input {
+  outline: none;
+}
+li {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #000;
+}
+#hearder {
+  height: 45px;
+  background-color: #006699;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+#hearder > h4 {
+  margin: 0;
+  line-height: 45px;
+  font-weight: normal;
+}
+#hearder > .fa-search {
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+#hearder > .fa-arrow-left {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  color: #fff;
+}
+#hearder > form {
+  padding: 8px 35px;
+}
+#hearder > form > input {
+  background-color: #fff;
+  text-align: left;
+  color: #000;
+  height: 30px;
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 5px;
+  font-size: 14px;
+}
+#footer {
+  height: 50px;
+  background-color: #006699;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+#footer > .mui-row > div > a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+#footer > .mui-row > div > a::before {
+  display: block;
+  padding: 2px;
+}
+#footer > .mui-row > div.active > a {
+  color: darkorange;
+}
+html,
+body {
+  height: 100%;
+}
+#main {
+  height: 100%;
+  overflow: hidden;
+  padding: 45px 0 50px 0;
+  background-color: #fff;
+}
+[class^=fa-],
+[class*=fa-] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+#main .navbar {
+  padding: 5px 10px;
+}
+#main .navbar > span {
+  color: #666;
+  font-size: 12px;
+}
+#main .navbar > span:nth-of-type(1) {
+  float: left;
+}
+#main .navbar > span:nth-of-type(2) {
+  float: right;
+}
+#main .navbar > span:nth-of-type(2)::before {
+  margin-right: 3px;
+}
+#main .history {
+  padding: 10px;
+}
+#main .history > ul {
+  border: 1px solid #ccc ;
+}
+#main .history > ul::before,
+#main .history > ul::after {
+  height: 0;
+}
+#main .history > ul > li {
+  line-height: 10px;
+  padding: 5px;
+}
+#main .history > ul > li > a {
+  font-size: 12px;
+  width: 100%;
+  color: #666;
+  margin: 0;
+}
+#main .history > ul > li > a > i {
+  float: right;
+}

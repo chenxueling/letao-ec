@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘</title>
+    <!-- 添加首页的站点图标 -->
+    <link rel="shortcut icon" type="./images/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/cart.less">
+    <!-- //引入less的编译器文件 -->
+    <script src="./lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="hearder">
+        <a href="javascript:history.back()" class="fa-arrow-left"></a>
+        <h4>购物车</h4>
+        <a href="javascript:void(0)" class="fa-refresh"></a>
+    </header>
+    <main id="main">
+        <div class="mui-content mui-scroll-wrapper" id="pullrefresh">
+            <div  class="mui-scroll">
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell mui-transitioning">
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue">编辑</a>
+                            <a class="mui-btn mui-btn-red">删除</a>
+                        </div>
+                        <div class="mui-slider-handle">
+                            <div class="mui-table-cell">
+                                <a href="javascript:;">
+                                    <img class="mui-media-object mui-pull-left" src="./images/product.jpg">
+                                    <div class="mui-media-body ">
+                                        <p class='mui-name'>匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                                        </p>
+                                        <div class="info">
+                                            <div class="price">
+                                                <span class="nowprice">¥499.1</span>
+                                                <del class="oldprice">￥888.1</del>
+                                            </div>
+                                            <span class="num">x1双</span>
+                                            <p class="size">鞋码：50</p>
+                                        </div>
+                                        <input type="checkbox">
+                                        <i class="mui-navigate-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="totalPrice">
+        订单总额：￥
+        <span>0</span>
+        <button type="button" class="mui-btn mui-btn-danger">生成订单</button>
+    </div>
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3 active">
+                <a href="./index.html" class="fa fa-home">
+                    <span>首页</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./category.html" class="fa fa-bars">
+                    <span>分类</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./cart.html" class="fa fa-shopping-cart">
+                    <span>购物车</span>
+                </a>
+            </div>
+            <div class="mui-col-xs-3">
+                <a href="./user.html" class="fa fa-user">
+                    <span>个人中心</span>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- 定义模板 -->
+    <script id="cartDataTmp" type="text/html">
+        {{each}}
+        <li class="mui-table-view-cell mui-transitioning">
+            <div class="mui-slider-right mui-disabled">
+                <a class="mui-btn mui-btn-blue btn-edit" data-id='{{$value.id}}' data-now-size='{{$value.size}}' data-old-size='{{$value.productSize}}' data-product-num='{{$value.num}}' data-total-num='{{$value.productNum}}'>编辑</a>
+                <a class="mui-btn mui-btn-red btn-delete" data-id='{{$value.id}}'>删除</a>
+            </div>
+            <div class="mui-slider-handle">
+                <div class="mui-table-cell">
+                    <a href="javascript:;">
+                        <img class="mui-pull-left" src="{{$value.pic[0].picAddr}}">
+                        <div class="mui-media-body ">
+                            <p class='mui-name'>{{$value.proName}}
+                            </p>
+                            <div class="info">
+                                <div class="price">
+                                    <span class="nowprice"data-price='{{$value.price}}'>{{$value.price}}</span>
+                                    <del class="oldprice">￥{{$value.oldPrice}}</del>
+                                </div>
+                                <span class="num" data-num='{{$value.num}}'>x{{$value.num}}双</span>
+                                <p class="size">鞋码：{{$value.size}}</p>
+                               
+                            </div>                         
+                            <i class="mui-navigate-right"></i>
+                        </div>
+                        <input type="checkbox" class='btn-check'>
+                    </a>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+       
+    </script>
+    <script id="editTmp" type="text/html">
+    <div class="product-size">
+                尺码为：
+                {{each size as value i}}
+                {{if Nowsize == value }}
+                <span class="btn-size mui-active">{{value}}</span>
+                {{else}}
+                <span class="btn-size">{{value}}</span>
+                {{/if}}
+                {{/each}}
+
+            </div>
+            <div class="product-num">
+                数量：
+                <span class="num-sub" data-total-num='{{totalNum}}'>-</span>
+                <input class='selectedSize' type="number" value="{{productNum}}" mui-disabled>
+                <span class="num-add" data-total-num='{{totalNum}}'>+</span>
+            </div>
+    
+    </script>
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

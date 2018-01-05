@@ -1,0 +1,39 @@
+@import './base.less';
+#main {
+    .mui-input-group {
+        padding: 10px;
+        &::after {
+            height: 0;
+        }
+        .mui-input-row {
+            &+div {
+                margin: 15px 0;
+            }
+            >input {
+                width: 100%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        }
+        .mui-button-row {
+            >.btn-login {
+                width: 100%;
+            }
+            >.btn-register{
+                font-size: 12px;
+                float: right;
+                margin-top: 20px;
+                color: #007aff;
+            }
+        }
+    }
+
+   
+}
+
+.mui-toast-container {
+    bottom: 300px;
+    // width: 200px;
+    font-size: 12px;
+    line-height: 12px;
+}
